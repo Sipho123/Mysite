@@ -169,7 +169,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = '587'
 EMAIL_USE_TLS = True #Security perpose
 EMAIL_HOST_USER = 'buyilemgwezani@gmail.com'
-EMAIL_HOST_PASSWORD = 'Happym_123' #please putyour real password
+EMAIL_HOST_PASSWORD = '' #please putyour real password
 #EMAIL_USE_SSL = False #Security perpose
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 

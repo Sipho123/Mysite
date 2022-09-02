@@ -1,5 +1,4 @@
 from email.policy import default
-from msilib.schema import Class
 from telnetlib import STATUS
 from turtle import title
 from django.db import models
