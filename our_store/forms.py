@@ -1,11 +1,4 @@
-from cProfile import label
-from dataclasses import fields
-import email
-#from os import uname
-from pyexpat import model
-from socket import fromshare
-from tkinter import Widget
-from xml.dom.minidom import Attr
+
 from django import forms
 from .models import Order, Customer, Product
 from django.contrib.auth.models import User
