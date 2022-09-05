@@ -8,7 +8,8 @@ from our_store.forms import CheckoutForm
 from django.views.generic import View, TemplateView, CreateView, FormView, DetailView, ListView
 
 from .models import Cart
-from .forms import CheckoutForm,CustomerRegistrationForm, CustomerLoginForm, ProductForm, ForgotPasswordForm, PasswordResetForm
+
+from .forms import Customer CheckoutForm, RegistrationForm, CustomerLoginForm, ProductForm, ForgotPasswordForm, PasswordResetForm
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login, logout
 from .utils import password_reset_token
