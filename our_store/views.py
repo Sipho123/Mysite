@@ -1,23 +1,14 @@
 from audioop import reverse
-import email
-from genericpath import exists
-from multiprocessing import context
-from pipes import Template
-from pyexpat import model
-from random import Random
-from re import search, template
-from tkinter.tix import Form
-from unicodedata import name
-from urllib import request
+
 from django.shortcuts import render,redirect
 from django.core.paginator import Paginator
 from django.db.models import Q
 from our_store.forms import CheckoutForm
-from .models import *
+
 from django.views.generic import View, TemplateView, CreateView, FormView, DetailView, ListView
-from django.http import HttpResponse
+
 from .models import Cart
-from .forms import CheckoutForm, CustomerRegistrationForm, CustomerLoginForm, ProductForm, ForgotPasswordForm, PasswordResetForm
+from .forms import CustomerRegistrationForm, CustomerLoginForm, ProductForm, ForgotPasswordForm, PasswordResetForm
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login, logout
 from .utils import password_reset_token
