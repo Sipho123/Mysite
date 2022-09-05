@@ -1,18 +1,15 @@
-from email.policy import default
-from telnetlib import STATUS
-#from turtle import title
+
+
 from django.db import models
-from django.conf import settings
-from django.forms import SlugField
-from numpy import product
+
+
 from django.contrib.auth.models import User
-from datetime import datetime
-from datetime import timezone
+
 from django.urls import reverse
 
 
 from django.contrib.auth import get_user_model as user_model
-User = user_model()
+
 
 class Admin(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
