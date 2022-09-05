@@ -1,15 +1,12 @@
-from audioop import reverse
 
+
+from audioop import reverse
 from django.shortcuts import render,redirect
 from django.core.paginator import Paginator
 from django.db.models import Q
-from our_store.forms import CheckoutForm
-
 from django.views.generic import View, TemplateView, CreateView, FormView, DetailView, ListView
-
-from .models import Cart
-
-from .forms import Customer CheckoutForm, RegistrationForm, CustomerLoginForm, ProductForm, ForgotPasswordForm, PasswordResetForm
+from our_store.forms import CustomerRegistrationForm, CustomerLoginForm, ForgotPasswordForm, PasswordResetForm, ProductForm, CheckoutForm
+from .models import Order, Cart, Product, Category,CartProduct, User, Customer, Admin, ORDER_STATUS, ProductImage
 from django.urls import reverse_lazy
 from django.contrib.auth import authenticate, login, logout
 from .utils import password_reset_token
