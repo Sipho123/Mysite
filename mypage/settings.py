@@ -96,7 +96,7 @@ DATABASES = {
         'PASSWORD': 'uvaPpmZc6FhxkEaL2mGt',
         'HOST': 'containers-us-west-57.railway.app',
         'PORT': '7397',
-        #'NAME': str(os.path.join(BASE_DIR, "postgresql"))
+        
         
     }
 }
@@ -143,7 +143,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_STORAGE = "whitenoise.storage.CompressedStaticFilesStorage"
 
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, "staticfiles"),
+    os.path.join(BASE_DIR, "static/"),
 )
 
 # Default primary key field type
