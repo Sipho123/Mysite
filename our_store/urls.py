@@ -1,6 +1,4 @@
 from django.urls import path
-from xml.etree.ElementInclude import include
-from django.views import View
 
 from .views import(        
 StoreView,
